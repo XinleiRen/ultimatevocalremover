@@ -1,13 +1,13 @@
 ## Introduction
 - This project is based on [ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui), which is licensed under the MIT License
-- This project extracts the de-reverb (UVR-De-Echo-Normal), de-harmony (6_HP-Karaoke-UVR), and de-noising (UVR-DeNoise) models from the VR Architecture module of [ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui) and enables their execution via Python code, eliminating the need for GUI-based interactions.
+- This project extracts the de-reverb (UVR-De-Echo-Normal), de-harmony (6_HP-Karaoke-UVR), and de-noising (UVR-DeNoise) models from the VR Architecture module of [ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui) and enables their execution via Python code, eliminating the need for GUI-based interactions
 
 ## Modification
 Compared to [ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui), this project adds two new files : separateVr\.py and infer\.py, and modifies one file: lib_v5/spec_utils.py
 
-- separateVr\.py: modified from separate\.py, and keeping only the code for de-reverb, de-harmony, and de-noise.
-- infer\.py: modified from UVR\.py.
-- lib_v5/spec_utils.py: improves the function in the file.
+- separateVr\.py: modified from separate\.py, only the code of VR Architecture module is retained
+- infer\.py: modified from UVR\.py
+- lib_v5/spec_utils.py: improves the function in the file
 
 ## Installation
 - chmod +x install_packages.sh
@@ -15,7 +15,7 @@ Compared to [ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalre
 
 ## Usage
 Download the models: 
-- Download the de-reverb, de-harmony, and de-noise models from https://pan.baidu.com/s/1vLT969VQr9dzVCZQRyW89A?pwd=41pb, and place the three *.pth files in the ./models/VR_Models directory.
+- Download the de-reverb, de-harmony, and de-noise models from https://pan.baidu.com/s/1vLT969VQr9dzVCZQRyW89A?pwd=41pb, and place the three *.pth files in the ./models/VR_Models directory
 
 - De-reverb:
 ```python

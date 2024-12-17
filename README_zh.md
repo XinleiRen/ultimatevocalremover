@@ -4,9 +4,9 @@
    
 ## Modification
 本项目相比 [ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui) 新增了两个文件：separateVr\.py 和 infer\.py，并修改了一个文件：lib_v5/spec_utils.py
-- separateVr\.py: 对 separate\.py 中无用的代码进行删除，只保留去混响、去和声和去噪相关模块的代码；
-- infer\.py: 主函数所在文件，在 UVR\.py 的基础上修改而来；
-- lib_v5/spec_utils.py: 完善文件中个别函数的调用方式；
+- separateVr\.py: 在 separate\.py 的基础上修改而来，只保留了 VR Architecture 模块的代码
+- infer\.py: 在 UVR\.py 的基础上修改而来
+- lib_v5/spec_utils.py: 完善文件中个别函数的调用方式
 
 ## Installation
 - chmod +x install_packages.sh
