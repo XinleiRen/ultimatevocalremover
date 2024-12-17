@@ -1,9 +1,9 @@
 ## Introduction
-- This project extracts the de-reverb (UVR-De-Echo-Normal), de-harmony (6_HP-Karaoke-UVR), and de-noise (UVR-DeNoise) models from ultimatevocalremovergui and calls them via Python code.
-- Official GitHub of ultimatevocalremovergui: [https://github.com/Anjok07/ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui)
+- This project is based on [ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui), which is licensed under the MIT License
+- This project extracts the de-reverb (UVR-De-Echo-Normal), de-harmony (6_HP-Karaoke-UVR), and de-noising (UVR-DeNoise) models from the VR Architecture module of [ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui) and enables their execution via Python code, eliminating the need for GUI-based interactions.
 
 ## Modification
-This project adds two files compared to the official code: separateVr\.py and infer\.py, and modifies one file: lib_v5/spec_utils.py
+Compared to [ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui), this project adds two new files : separateVr\.py and infer\.py, and modifies one file: lib_v5/spec_utils.py
 
 - separateVr\.py: modified from separate\.py, and keeping only the code for de-reverb, de-harmony, and de-noise.
 - infer\.py: modified from UVR\.py.

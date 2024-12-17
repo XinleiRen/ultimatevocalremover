@@ -1,9 +1,9 @@
 ## Introduction
-- 本项目将 ultimatevocalremovergui 中的去混响（UVR-De-Echo-Normal）、去和声（6_HP-Karaoke-UVR）和去噪（UVR-DeNoise）模型抽取出来，并通过 python 代码的方式调用；
-- ultimatevocalremovergui 官方 github：[https://github.com/Anjok07/ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui)
+- 本项目基于 [ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui), 而后者是根据 MIT 许可证授权的
+- 本项目将 [ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui) 中 VR Architecture 模块的去混响（UVR-De-Echo-Normal）、去和声（6_HP-Karaoke-UVR）和去噪（UVR-DeNoise）模型抽取出来，并使其可以通过 python 代码的方式调用，省去了界面交互的操作
    
 ## Modification
-本项目相比官方代码新增两个文件：separateVr\.py 和 infer\.py，并修改了一个文件：lib_v5/spec_utils.py
+本项目相比 [ultimatevocalremovergui](https://github.com/Anjok07/ultimatevocalremovergui) 新增了两个文件：separateVr\.py 和 infer\.py，并修改了一个文件：lib_v5/spec_utils.py
 - separateVr\.py: 对 separate\.py 中无用的代码进行删除，只保留去混响、去和声和去噪相关模块的代码；
 - infer\.py: 主函数所在文件，在 UVR\.py 的基础上修改而来；
 - lib_v5/spec_utils.py: 完善文件中个别函数的调用方式；
